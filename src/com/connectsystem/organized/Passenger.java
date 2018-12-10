@@ -3,7 +3,7 @@ package com.connectsystem.organized;
 public class Passenger {
 
     int freeBags;
-    int checkedBags;
+    private int checkedBags;
     double perBagFee;
 
     public Passenger() {
@@ -24,10 +24,18 @@ public class Passenger {
 
     public Passenger(int freeBags, int checkedBags) {
         this(freeBags); // calls the constructor with one parameter
-        this.checkedBags = checkedBags;
+        this.setCheckedBags(checkedBags);
     }
 
     private Passenger(double perBagFee) {
         this.perBagFee = perBagFee;
+    }
+
+    public int getCheckedBags() {
+        return checkedBags;
+    }
+
+    public void setCheckedBags(int checkedBags) {
+        this.checkedBags = checkedBags;
     }
 }
