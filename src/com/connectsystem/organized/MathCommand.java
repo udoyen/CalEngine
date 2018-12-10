@@ -1,6 +1,6 @@
 package com.connectsystem.organized;
 
-public enum MathCommand {
+enum MathCommand {
 
     Add,
     Subtract,
